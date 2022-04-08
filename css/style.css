@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(220, 82, 82);
+}
+
+.container{
+    width:36vw;
+    height: 60vh;
+    margin: auto;
+    margin-top:2em;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 0.3em;
+    font-size: 2.6rem;
+}
+
+p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+}
+
+img{
+    max-width: 70%;
+    max-height: 80%;
+    opacity:0;
+}
+
+.carta{
+    background-color: rgb(80, 80, 209);
+    border: 1px solid black;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+div .girata{
+    opacity: 1;
+    animation-name: image;
+    animation-duration: 0.6s;
+}
+
+@keyframes image{
+    from{opacity:0}
+    to{opacity:1};
+   
+}
+
+div #risolto{
+    opacity:1;
+}
+
+.modal{
+    width: 30vw;
+    height: 25vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-size: 2rem;
+    position: absolute;
+    transform:translate(118%,-260%);
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px black;
+    flex-direction: column;
+}
+
+
+
+.btn{
+    margin-top: 2em;
+    padding: 0.4em;
+    font-size: 1.5rem;
+    border:none;
+    background-color: orange;
+    box-shadow: 1px 1px 5px black;
+    cursor:pointer;
+    
+}
+.btn:hover{
+    background-color: yellow;
+}
+
+
+
