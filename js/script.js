@@ -67,7 +67,7 @@ $(() => {
    var confronta=[];
    var cartegirate=0;
    var time;
-    startGame();
+   startGame();
 
     function startGame() {
 
@@ -98,6 +98,8 @@ $(() => {
          if (s==60){
              s=0;
              m++;
+             zeros="0";
+             zerom="0";
          }
          if(s>9){
              zeros="";
